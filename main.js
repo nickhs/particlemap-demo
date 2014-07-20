@@ -270,7 +270,7 @@ function createGermanyMap() {
             stretch: false,
             pixelResolution: 5,
             drawPointFunc: function(coords, idx, status) {
-                var width = this.canvas.width;
+                var width = this.canvas.scrollWidth;
                 if (status == ParticleMap.prototype.pixelStatusEnum.INSIDE) {
                     if (coords[0] <= width/3) return {color: '#000000'};
                     if (coords[0] > width/3 && coords[0] <= (2*width) / 3) return {color: '#ff0000'};
