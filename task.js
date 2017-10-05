@@ -1,7 +1,7 @@
 /* global self */
 
 self.addEventListener('message', function(e) {
-    importScripts('particlemap/build/particlemap.js');
+    importScripts('particlemap/build/particlemap.min.js');
     var worldMap = new ParticleMap(e.data.geojson, e.data.params);
     var parsed = worldMap.parse(worldMap.geojson);
     worldMap.determineOffsets(parsed);

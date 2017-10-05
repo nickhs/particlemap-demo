@@ -164,7 +164,7 @@ Plane.prototype.selfDestruct = function() {
 };
 
 function createWorldMap() {
-    var geojson_file = '/world.geo.json/countries.geo.json';
+    var geojson_file = 'world.geo.json/countries.geo.json';
 
     var canvas = document.getElementById('world-map');
     canvas.height = canvas.scrollHeight;
@@ -256,7 +256,7 @@ function createWorldMap() {
 }
 
 function createGermanyMap() {
-    var geojson_file = '/world.geo.json/countries/DEU.geo.json';
+    var geojson_file = 'world.geo.json/countries/DEU.geo.json';
     var canvas = document.getElementById('germany-map');
     canvas.height = canvas.scrollHeight;
     canvas.width = canvas.scrollWidth;
@@ -287,7 +287,7 @@ function createMichiganMap() {
     canvas.height = canvas.scrollHeight;
     canvas.width = canvas.scrollWidth;
 
-    var geojson_file = '/world.geo.json/countries/USA/MI.geo.json';
+    var geojson_file = 'world.geo.json/countries/USA/MI.geo.json';
     fetchDoc(geojson_file, function(data) {
         data = JSON.parse(data.target.response);
         // grab da mitt
@@ -305,7 +305,7 @@ function createMichiganMap() {
 }
 
 function createPointMap() {
-    var geojson_file = '/world.geo.json/countries/IND.geo.json';
+    var geojson_file = 'world.geo.json/countries/IND.geo.json';
     var canvas = document.getElementById('point-map');
     canvas.height = canvas.scrollHeight;
     canvas.width = canvas.scrollWidth;
